@@ -1,16 +1,21 @@
 # image_grid_demo_app
 
-A new Flutter project.
+공공데이터포털 자료인 한국관광공사 관광사진을 보여주는 앱
 
-## Getting Started
+메인화면
+![Image Grid Page](https://github.com/yongyong-john/image_grid_demo/blob/main/images/image_grid.PNG?raw=true)
 
-This project is a starting point for a Flutter application.
+이미지 상세화면
+![Image Details Page](https://github.com/yongyong-john/image_grid_demo/blob/main/images/image_details.PNG?raw=true)
 
-A few resources to get you started if this is your first Flutter project:
+이미지 줌인/줌아웃 화면
+![Image Viewer Page](https://github.com/yongyong-john/image_grid_demo/blob/main/images/iage_viewer.PNG?raw=true)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+위의 세 화면으로 구성된 앱입니다.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+공공데이터포털의 한국관광공사가 지원하는 관광사진 API를 사용했습니다.
+https://www.data.go.kr/data/15101914/openapi.do#/API%20%EB%AA%A9%EB%A1%9D/galleryList1
+위 API에서 제공하는 데이터 중 사진 제목, 사진 Url, 사진 장소, 사진 상세 정보를 가져와 사용합니다.
+또한, 한 번에 받아오는 이미지는 30개로 스크롤마다 pageNumber를 추가하여 API를 통해 다음의 이미지를 계속 받아옵니다.
+
+UI와 Busniss logic을 분리하고 Bloc design pattern을 사용하여 화면과 API 사용 코드를 분리했습니다.
