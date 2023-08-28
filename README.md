@@ -3,12 +3,15 @@
 공공데이터포털 자료인 한국관광공사 관광사진을 보여주는 앱
 
 메인화면
+
 ![Image Grid Page](https://github.com/yongyong-john/image_grid_demo/blob/main/images/image_grid.PNG?raw=true)
 
 이미지 상세화면
+
 ![Image Details Page](https://github.com/yongyong-john/image_grid_demo/blob/main/images/image_details.PNG?raw=true)
 
 이미지 줌인/줌아웃 화면
+
 ![Image Viewer Page](https://github.com/yongyong-john/image_grid_demo/blob/main/images/iage_viewer.PNG?raw=true)
 
 위의 세 화면으로 구성된 앱입니다.
